@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fiesta Kitchen menu — breakfast, brunch, fair trade coffee, cabinet food &amp; vegan options. Glen Eden, Auckland." />
+  <title>Menu | Fiesta Kitchen — Glen Eden, Auckland</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-name">Fiesta Kitchen</span>
+        <span class="nav-brand-sub">Glen Eden, Auckland</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HOURS BAR -->
+  <div class="hours-bar">
+    <div class="hours-bar-item">&#128336; Mon – Fri: <strong>7:00am – 3:00pm</strong></div>
+    <div class="hours-bar-sep"></div>
+    <div class="hours-bar-item">&#128336; Sat – Sun: <strong>7:30am – 2:30pm</strong></div>
+    <div class="hours-bar-sep"></div>
+    <div class="hours-status" id="openStatus">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking…</span>
+    </div>
+  </div>
+
+  <!-- TAKEAWAY BAR -->
+  <div class="takeaway-bar">&#127861; Takeaway available on all menu items <span>Order at counter</span></div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero page-hero--with-tabs">
+    <h1>Our Menu</h1>
+    <p>Fresh, homemade food with Mexican soul — served every morning in Glen Eden</p>
+
+    <!-- TAB NAVIGATION -->
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-target="breakfast">&#127858; Breakfast</button>
+      <button class="menu-tab" data-target="brunch">&#127859; Brunch Specials</button>
+      <button class="menu-tab" data-target="coffee">&#9749; Coffee &amp; Drinks</button>
+      <button class="menu-tab" data-target="cabinet">&#127856; Cabinet Food</button>
+      <button class="menu-tab" data-target="vegan">&#127807; Vegan Menu</button>
+    </div>
+  </div>
+
+  <!-- MENU CONTENT -->
+  <section class="section" style="background: var(--bg-card);">
+    <div class="container">
+
+      <!-- Legend -->
+      <div style="display:flex;gap:.65rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.25rem;" class="fade-in">
+        <span class="badge badge-vegan">&#127807; Vegan</span>
+        <span class="badge badge-vego">&#127823; Vegetarian</span>
+        <span class="badge badge-signature">&#11088; Signature</span>
+        <span class="badge badge-gf">GF Gluten Friendly</span>
+        <span class="badge badge-new">New</span>
+        <span style="font-size:.82rem;color:var(--text-light);display:flex;align-items:center;">(V) = can be made vegan on request</span>
+      </div>
+
+      <!-- VEGAN HIGHLIGHT BOX -->
+      <div class="vegan-banner fade-in">
+        <h3>&#127807; Vegan &amp; Vegetarian Friendly</h3>
+        <p>We take plant-based eating seriously. Items marked <strong>Vegan</strong> are fully plant-based. Vegetarian items can often be made vegan — just ask our team. All plant milks available at no extra cost.</p>
+        <div class="plant-milks">
+          <span class="plant-milk-tag">&#127807; Oat Milk</span>
+          <span class="plant-milk-tag">&#127807; Almond Milk</span>
+          <span class="plant-milk-tag">&#127807; Soy Milk</span>
+          <span class="plant-milk-tag">&#127807; Coconut Milk</span>
+        </div>
+      </div>
+
+      <!-- ====== BREAKFAST ====== -->
+      <div class="menu-section active" id="breakfast">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">&#127858;</div>
+          <div>
+            <h2>Breakfast</h2>
+            <p style="color:var(--text-light);font-size:.88rem;margin-top:.2rem;">Served all day until close &nbsp;·&nbsp; All eggs are free range</p>
+          </div>
+        </div>
+        <div class="menu-items-grid">
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80" alt="Eggs on toast" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Eggs on Toast</span></div>
+                <p class="menu-item-desc">Two free-range eggs your way — fried, scrambled or poached — on toasted sourdough with butter. Simple, done right.</p>
+              </div>
+              <div class="menu-item-price">$12</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80" alt="Big Fiesta Breakfast plate" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Big Fiesta Breakfast</span></div>
+                <p class="menu-item-desc">Two free-range eggs, two rashers of bacon, sausage, sautéed mushrooms, roasted tomato, hash brown &amp; sourdough toast.</p>
+              </div>
+              <div class="menu-item-price">$22</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80" alt="Avocado smash on sourdough" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Avocado Smash</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Smashed seasonal avo on sourdough with whipped feta, cherry tomatoes, pickled red onion, dukkah &amp; olive oil.</p>
+              </div>
+              <div class="menu-item-price">$18</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=600&q=80" alt="Eggs Benedict with hollandaise" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Eggs Benedict</span></div>
+                <p class="menu-item-desc">Two poached free-range eggs on toasted English muffin with shaved ham, hollandaise sauce &amp; a side salad.</p>
+              </div>
+              <div class="menu-item-price">$19</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1510693206972-df098062cb71?w=600&q=80" alt="Fiesta omelette with capsicum and cheese" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Fiesta Omelette</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Three-egg omelette filled with roasted capsicum, red onion, jalapeños, cheddar cheese &amp; fresh herbs. Served with sourdough toast.</p>
+              </div>
+              <div class="menu-item-price">$17</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Fluffy banana hotcakes with maple syrup" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Banana Hotcakes</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Fluffy buttermilk hotcakes with caramelised banana, maple syrup, toasted walnuts &amp; whipped cream. Vegan option available.</p>
+              </div>
+              <div class="menu-item-price">$17</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80" alt="Breakfast burrito with eggs and bacon" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Breakfast Burrito</span></div>
+                <p class="menu-item-desc">Flour tortilla filled with scrambled eggs, crispy bacon, melted cheese, hash brown &amp; chipotle aioli. Served with house salsa.</p>
+              </div>
+              <div class="menu-item-price">$18</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80" alt="French toast with berries and cream" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">French Toast</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Thick-cut brioche dipped in vanilla custard, pan-fried golden. Served with seasonal berries, mascarpone &amp; maple syrup.</p>
+              </div>
+              <div class="menu-item-price">$17</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Smoked salmon stack with poached eggs" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Smoked Salmon Stack</span>
+                  <span class="badge badge-gf">GF</span>
+                </div>
+                <p class="menu-item-desc">Poached eggs, NZ smoked salmon, avocado, cream cheese &amp; capers on toasted sourdough. Lemon &amp; dill dressing.</p>
+              </div>
+              <div class="menu-item-price">$22</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="allergen-box" style="margin-top:2rem;">
+          <strong>Add-ons &amp; Extras:</strong> Extra egg $3 &nbsp;·&nbsp; Bacon $4 &nbsp;·&nbsp; Avocado $4 &nbsp;·&nbsp; Halloumi $4 &nbsp;·&nbsp; Hash brown $3 &nbsp;·&nbsp; Toast $3 &nbsp;·&nbsp; Sausage $4<br>
+          <span style="margin-top:.4rem;display:block;color:var(--text-light);">Please let our team know of any allergies or dietary requirements. We do our best to accommodate.</span>
+        </div>
+      </div>
+
+      <!-- ====== BRUNCH SPECIALS ====== -->
+      <div class="menu-section" id="brunch">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">&#127859;</div>
+          <div>
+            <h2>Brunch Specials</h2>
+            <p style="color:var(--text-light);font-size:.88rem;margin-top:.2rem;">Mexican-inspired brunch dishes &nbsp;·&nbsp; Our chef's favourites</p>
+          </div>
+        </div>
+        <div class="menu-items-grid">
+
+          <div class="menu-item menu-item-span-2 signature fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80" alt="Fiesta Rice — signature Mexican rice bowl" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Fiesta Rice</span>
+                  <span class="badge badge-chef">&#11088; Chef's Special</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Our most-loved dish. Seasoned Mexican rice, topped with a fried free-range egg, slow-cooked black beans, fresh pico de gallo, sour cream, pickled jalapeños &amp; fresh coriander. Pure comfort.</p>
+              </div>
+              <div class="menu-item-price">$18</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Huevos Rancheros with eggs on tortillas" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Huevos Rancheros</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Two fried eggs on warm corn tortillas, smoky ranchero sauce, black beans, cotija cheese, avocado crema &amp; fresh salsa verde.</p>
+              </div>
+              <div class="menu-item-price">$19</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&q=80" alt="Slow-cooked pulled pork hash with eggs" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Pulled Pork Hash</span></div>
+                <p class="menu-item-desc">Slow-cooked chipotle pulled pork, crispy potato hash, two poached eggs, chipotle aioli &amp; pickled red onion. Rich and satisfying.</p>
+              </div>
+              <div class="menu-item-price">$21</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Chilli corn bowl with black beans and guacamole" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Chilli Corn Bowl</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                </div>
+                <p class="menu-item-desc">Roasted corn, seasoned black beans, pico de gallo, pickled jalapeños, guacamole, crispy tortilla strips &amp; lime dressing. Hearty &amp; fully plant-based.</p>
+              </div>
+              <div class="menu-item-price">$18</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80" alt="Chorizo and eggs with peppers" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Chorizo &amp; Eggs</span></div>
+                <p class="menu-item-desc">Spanish chorizo, sautéed peppers &amp; onion, two poached eggs, manchego, toasted sourdough &amp; house chilli oil. A weekend favourite.</p>
+              </div>
+              <div class="menu-item-price">$20</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="Green Goddess nourish bowl" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Green Goddess Bowl</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                  <span class="badge badge-new">New</span>
+                </div>
+                <p class="menu-item-desc">Brown rice, roasted sweet potato, shredded kale, edamame, sliced avocado, cucumber, green tahini &amp; toasted seeds. Nourishing &amp; delicious.</p>
+              </div>
+              <div class="menu-item-price">$19</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=600&q=80" alt="Chicken quesadilla with salsa" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top"><span class="menu-item-name">Chicken Quesadilla</span></div>
+                <p class="menu-item-desc">Toasted flour tortilla filled with smoky grilled chicken, roasted capsicum, cheddar &amp; mozzarella. Served with sour cream &amp; house salsa.</p>
+              </div>
+              <div class="menu-item-price">$20</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80" alt="Shakshuka — eggs poached in spiced tomato sauce" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Shakshuka</span>
+                  <span class="badge badge-vego">Vegetarian</span>
+                </div>
+                <p class="menu-item-desc">Eggs poached in a rich spiced tomato &amp; capsicum sauce, crumbled feta, fresh herbs &amp; crusty sourdough for dipping. Slow brunch heaven.</p>
+              </div>
+              <div class="menu-item-price">$18</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====== COFFEE & DRINKS ====== -->
+      <div class="menu-section" id="coffee">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">&#9749;</div>
+          <div>
+            <h2>Coffee &amp; Drinks</h2>
+            <p style="color:var(--text-light);font-size:.88rem;margin-top:.2rem;">Fair trade organic beans &nbsp;·&nbsp; All plant milks available &nbsp;·&nbsp; Decaf available</p>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom:1.25rem;font-size:1.25rem;">&#9749; Espresso-Based Coffee</h3>
+        <div class="coffee-grid" style="margin-bottom:2.5rem;">
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Flat white coffee" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Flat White</div>
+              <div class="coffee-price">$5.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Latte with art" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Latte</div>
+              <div class="coffee-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80" alt="Cappuccino with foam" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Cappuccino</div>
+              <div class="coffee-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Long black coffee" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Long Black</div>
+              <div class="coffee-price">$4.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Short black espresso" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Short Black</div>
+              <div class="coffee-price">$4.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80" alt="Macchiato" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Macchiato</div>
+              <div class="coffee-price">$4.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=600&q=80" alt="Mocha coffee" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Mocha</div>
+              <div class="coffee-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80" alt="Cortado coffee" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Cortado</div>
+              <div class="coffee-price">$4.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Piccolo latte" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Piccolo</div>
+              <div class="coffee-price">$4.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Iced coffee over ice" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Iced Coffee</div>
+              <div class="coffee-price">$7.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Iced latte" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Iced Latte</div>
+              <div class="coffee-price">$7.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Cold brew coffee" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Cold Brew</div>
+              <div class="coffee-price">$7.50</div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 style="margin-bottom:1.25rem;font-size:1.25rem;">&#127861; Hot Drinks</h3>
+        <div class="coffee-grid" style="margin-bottom:2.5rem;">
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=600&q=80" alt="Hot chocolate" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Hot Chocolate</div>
+              <div class="coffee-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80" alt="Chai latte with spices" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Chai Latte</div>
+              <div class="coffee-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&q=80" alt="Matcha latte" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Matcha Latte</div>
+              <div class="coffee-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80" alt="Turmeric golden latte" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Turmeric Latte</div>
+              <div class="coffee-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80" alt="Pot of tea" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Pot of Tea</div>
+              <div class="coffee-price">$4.50</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Batch brew filter coffee" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Batch Brew Filter</div>
+              <div class="coffee-price">$4.00</div>
+              <div class="coffee-note">Refill $2</div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 style="margin-bottom:1.25rem;font-size:1.25rem;">&#127893; Cold &amp; Fresh Drinks</h3>
+        <div class="coffee-grid">
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Fresh squeezed orange juice" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Fresh Squeezed OJ</div>
+              <div class="coffee-price">$7.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Fruit smoothie" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Smoothie</div>
+              <div class="coffee-price">$9.00</div>
+              <div class="coffee-note">Ask for today's flavour</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Fresh apple juice" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Fresh Apple Juice</div>
+              <div class="coffee-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Soft drink" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Soft Drink</div>
+              <div class="coffee-price">$4.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Sparkling water" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Still / Sparkling Water</div>
+              <div class="coffee-price">$3.00</div>
+            </div>
+          </div>
+
+          <div class="coffee-item fade-in">
+            <img class="coffee-item-img" src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80" alt="Kombucha" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="coffee-item-body">
+              <div class="coffee-name">Kombucha</div>
+              <div class="coffee-price">$6.00</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="allergen-box" style="margin-top:2rem;">
+          All coffee uses our signature fair trade organic espresso blend. Decaf available on request.
+          Plant milks (oat, almond, soy, coconut) available at no extra charge.
+          Large size coffee +$1. Extra shot +$1.
+        </div>
+      </div>
+
+      <!-- ====== CABINET FOOD ====== -->
+      <div class="menu-section" id="cabinet">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">&#127856;</div>
+          <div>
+            <h2>Cabinet Food</h2>
+            <p style="color:var(--text-light);font-size:.88rem;margin-top:.2rem;">Baked fresh daily in our kitchen &nbsp;·&nbsp; Available while stocks last</p>
+          </div>
+        </div>
+        <div style="margin-bottom:2rem;" class="fade-in">
+          <p style="color:var(--text-light);font-size:.92rem;">Our cabinet is stocked fresh each morning with homemade baking, toasted sandwiches, savoury options &amp; sweet treats. Come in early for the best selection!</p>
+        </div>
+
+        <h3 class="cabinet-subheading">&#127856; Sweet Baking</h3>
+        <div class="cabinet-card-grid">
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&q=80" alt="Muffin of the Day" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Muffin of the Day</div>
+              <div class="cabinet-card-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600&q=80" alt="Banana Bread Slice" onerror="this.src='https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Banana Bread Slice</div>
+              <div class="cabinet-card-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80" alt="Caramel Slice" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Caramel Slice</div>
+              <div class="cabinet-card-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&q=80" alt="Lemon Slice" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Lemon Slice</div>
+              <div class="cabinet-card-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=600&q=80" alt="Chocolate Brownie" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Chocolate Brownie</div>
+              <div class="cabinet-card-price">$6.50</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80" alt="Blueberry Friand" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Blueberry Friand</div>
+              <div class="cabinet-card-price">$5.50</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80" alt="Scone with Jam and Butter" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Scone with Jam &amp; Butter</div>
+              <div class="cabinet-card-price">$5.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80" alt="Cookie" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Cookie (ask for today's)</div>
+              <div class="cabinet-card-price">$4.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&q=80" alt="Cinnamon Roll" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Cinnamon Roll</div>
+              <div class="cabinet-card-price">$6.50</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Croissant plain or filled" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Croissant (plain/filled)</div>
+              <div class="cabinet-card-price">$6.50</div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="cabinet-subheading">&#127829; Savoury Cabinet</h3>
+        <div class="cabinet-card-grid">
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80" alt="Quiche of the Day" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Quiche of the Day</div>
+              <div class="cabinet-card-price">$9.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80" alt="Toasted Sandwich" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Toasted Sandwich</div>
+              <div class="cabinet-card-price">$10.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&q=80" alt="Cheese and Spinach Roll" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Cheese &amp; Spinach Roll</div>
+              <div class="cabinet-card-price">$6.50</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=600&q=80" alt="Savoury Muffin" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Savoury Muffin</div>
+              <div class="cabinet-card-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&q=80" alt="Cheese and Marmite Scroll" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Cheese &amp; Marmite Scroll</div>
+              <div class="cabinet-card-price">$6.00</div>
+            </div>
+          </div>
+
+          <div class="cabinet-card fade-in">
+            <img class="cabinet-card-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Filled Baguette" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="cabinet-card-body">
+              <div class="cabinet-card-name">Filled Baguette</div>
+              <div class="cabinet-card-price">$12.00</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="allergen-box">
+          Cabinet items are baked fresh each morning and may sell out. Contents vary daily. Please ask our team about current selection and allergen information.
+        </div>
+      </div>
+
+      <!-- ====== VEGAN MENU ====== -->
+      <div class="menu-section" id="vegan">
+        <div class="menu-section-header">
+          <div class="menu-section-icon">&#127807;</div>
+          <div>
+            <h2>Vegan &amp; Plant-Based Menu</h2>
+            <p style="color:var(--text-light);font-size:.88rem;margin-top:.2rem;">Fully plant-based options &nbsp;·&nbsp; Made with care &nbsp;·&nbsp; No compromise on flavour</p>
+          </div>
+        </div>
+
+        <div class="vegan-banner" style="margin-bottom:2.5rem;">
+          <h3>&#127807; Fully Plant-Based</h3>
+          <p>Every item in this section is 100% vegan. We use plant milks, vegan butter, egg substitutes where needed, and keep our kitchen aware of cross-contamination risks. Let us know if you have specific allergies.</p>
+        </div>
+
+        <div class="menu-items-grid">
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80" alt="Vegan avocado smash on sourdough" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Avocado Smash (Vegan)</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                </div>
+                <p class="menu-item-desc">Smashed avo, cherry tomatoes, pickled red onion &amp; dukkah on sourdough. No feta, no dairy — just pure goodness.</p>
+              </div>
+              <div class="menu-item-price">$17</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Chilli corn bowl" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Chilli Corn Bowl</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                  <span class="badge badge-signature">&#11088; Fav</span>
+                </div>
+                <p class="menu-item-desc">Roasted corn, black beans, pico de gallo, pickled jalapeños, guacamole &amp; crispy tortilla strips with zesty lime dressing.</p>
+              </div>
+              <div class="menu-item-price">$18</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="Green goddess nourish bowl" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Green Goddess Bowl</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                  <span class="badge badge-new">New</span>
+                </div>
+                <p class="menu-item-desc">Brown rice, roasted sweet potato, kale, edamame, sliced avocado, cucumber &amp; a creamy green tahini dressing. Topped with toasted seeds.</p>
+              </div>
+              <div class="menu-item-price">$19</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1550950158-d0d960dff596?w=600&q=80" alt="Vegan big breakfast with plant-based sausage" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Vegan Big Breakfast</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                </div>
+                <p class="menu-item-desc">Plant-based sausage, roasted mushrooms, baked tomato, hash brown, smashed avo &amp; sourdough toast. Fully loaded, zero animal products.</p>
+              </div>
+              <div class="menu-item-price">$21</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Vegan banana hotcakes" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Banana Hotcakes (Vegan)</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                </div>
+                <p class="menu-item-desc">Fluffy oat-based hotcakes with caramelised banana, maple syrup &amp; toasted coconut. Dairy-free, egg-free, entirely plant-based.</p>
+              </div>
+              <div class="menu-item-price">$17</div>
+            </div>
+          </div>
+
+          <div class="menu-item fade-in">
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Vegan huevos rancheros" onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80';this.onerror=null;" loading="lazy">
+            <div class="menu-item-body">
+              <div class="menu-item-info">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Vegan Huevos Rancheros</span>
+                  <span class="badge badge-vegan">Vegan</span>
+                </div>
+                <p class="menu-item-desc">Plant-based scrambled eggs on corn tortillas, smoky ranchero sauce, black beans, pickled jalapeños &amp; avocado crema.</p>
+              </div>
+              <div class="menu-item-price">$19</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="allergen-box" style="margin-top:2rem;">
+          <strong>Plant Milks — all complimentary:</strong> Oat · Almond · Soy · Coconut<br>
+          <span style="margin-top:.4rem;display:block;color:var(--text-light);">Our kitchen handles eggs, dairy, nuts and gluten. While we take care, we cannot guarantee a completely allergen-free environment. Please speak to our team about your specific needs.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Join the Fiesta?</h2>
+      <p>Find us at 220 West Coast Road, Glen Eden. Parking available at the back.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-mustard">Get Directions</a>
+        <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="btn btn-outline-white">&#128172; Ask a Question</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Fiesta Kitchen</div>
+        <div class="footer-brand-sub">Glen Eden, Auckland</div>
+        <p class="footer-desc">Fresh, homemade food with Mexican soul. Fair trade organic coffee. Dog friendly. A community cafe with heart.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/fiesta_kitchen23" target="_blank" rel="noopener" class="social-btn ig-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram</a>
+          <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="social-btn">&#128172; WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Visit Us</h5>
+        <div class="footer-addr">
+          <p>220 West Coast Road<br>Glen Eden<br>Auckland 0602</p>
+          <p style="margin-top:.75rem"><a href="tel:+6498187693" >+64 9 818 7693</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Fiesta Kitchen | Glen Eden, Auckland</span>
+      <span>Prices incl. GST &nbsp;·&nbsp; Menu subject to change</span>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <div class="wa-float">
+    <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="wa-btn" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      <span class="wa-text">Chat with us</span>
+      <div class="wa-pulse"></div>
+    </a>
+  </div>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); navLinks.classList.toggle('open'); });
+    document.addEventListener('click', (e) => { if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) { hamburger.classList.remove('open'); navLinks.classList.remove('open'); } });
+
+    // Open status
+    function checkOpen() {
+      const now  = new Date();
+      const nz   = new Date(now.toLocaleString('en-US', { timeZone: 'Pacific/Auckland' }));
+      const day  = nz.getDay(); const mins = nz.getHours() * 60 + nz.getMinutes();
+      const open = (day >= 1 && day <= 5) ? (mins >= 420 && mins < 900) : (mins >= 450 && mins < 870);
+      document.getElementById('statusDot').className = open ? 'status-dot' : 'status-dot closed';
+      document.getElementById('statusText').textContent = open ? 'Open Now' : 'Closed';
+    }
+    checkOpen();
+
+    // Menu tabs
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+        document.getElementById(tab.dataset.target).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Graceful image fallback — hide broken imgs cleanly
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('error', function() {
+        this.style.background = 'var(--cream-dark)';
+        this.style.minHeight = this.classList.contains('cabinet-card-img') ? '160px' : (this.classList.contains('cabinet-img') ? '52px' : (this.classList.contains('coffee-item-img') ? '130px' : '175px'));
+        this.src = '';
+        this.alt = '';
+      });
+    });
+
+    // Fade-in
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

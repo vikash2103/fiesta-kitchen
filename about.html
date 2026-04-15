@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Fiesta Kitchen — our story, our team, our values. A community cafe in Glen Eden, Auckland serving homemade food & fair trade coffee since 2014." />
+  <title>About Us | Fiesta Kitchen — Glen Eden, Auckland</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-name">Fiesta Kitchen</span>
+        <span class="nav-brand-sub">Glen Eden, Auckland</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HOURS BAR -->
+  <div class="hours-bar">
+    <div class="hours-bar-item">&#128336; Mon – Fri: <strong>7:00am – 3:00pm</strong></div>
+    <div class="hours-bar-sep"></div>
+    <div class="hours-bar-item">&#128336; Sat – Sun: <strong>7:30am – 2:30pm</strong></div>
+    <div class="hours-bar-sep"></div>
+    <div class="hours-status" id="openStatus">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking…</span>
+    </div>
+  </div>
+
+  <!-- TAKEAWAY BAR -->
+  <div class="takeaway-bar">&#127861; Takeaway available on all items <span>Order at counter</span></div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>Our Story</h1>
+    <p>Glen Eden's neighbourhood cafe — homemade food, fair trade organic coffee &amp; Mexican-inspired warmth since 2014</p>
+  </div>
+
+  <!-- STORY SECTION -->
+  <section class="section" style="background:var(--bg);">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text fade-in">
+          <h2>Where It All Began</h2>
+          <p>
+            Fiesta Kitchen opened in Glen Eden in <strong>2014</strong>, sister cafe to the beloved <strong>Fiesta Coffee Lounge in Pt Chevalier</strong>. We serve homemade food, fair trade organic <strong>Icoco</strong> coffee, with a warm Mexican-inspired atmosphere. Dog friendly, vegan options available, community focused.
+          </p>
+          <p>
+            From day one, our goal has been simple: cook honest food, brew exceptional coffee, and create a space where everyone feels at home. Step inside for terracotta tones, bold flavours, and the smell of freshly ground beans — Glen Eden has given us so much, and we try to give back every single day.
+          </p>
+          <div style="margin-top:1.5rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+            <span class="badge badge-chef">&#11088; Est. 2014 — Glen Eden</span>
+            <span class="badge badge-vegan">&#127807; Plant-Based Options</span>
+            <span class="badge badge-dog">&#128054; Dog Friendly</span>
+          </div>
+        </div>
+        <div class="story-visual fade-in">
+          <div class="story-photo-frame">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=80"
+                 alt="Fiesta Kitchen — warm cafe atmosphere"
+                 loading="lazy"
+                 style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;">
+            <div style="flex:1;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem;text-align:center;">
+              <div style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--gold);">10+</div>
+              <div style="font-size:.76rem;color:var(--tan);text-transform:uppercase;letter-spacing:.08em;">Years Serving<br>Glen Eden</div>
+            </div>
+            <div style="flex:1;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem;text-align:center;">
+              <div style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--orange);">2</div>
+              <div style="font-size:.76rem;color:var(--tan);text-transform:uppercase;letter-spacing:.08em;">Sister Cafes<br>Auckland</div>
+            </div>
+            <div style="flex:1;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem;text-align:center;">
+              <div style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:#7dd898;">100%</div>
+              <div style="font-size:.76rem;color:var(--tan);text-transform:uppercase;letter-spacing:.08em;">Fair Trade<br>Organic Coffee</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOG FRIENDLY -->
+  <section class="section-sm" style="background:var(--bg-card);">
+    <div class="container">
+      <div class="dog-spotlight fade-in">
+        <div style="font-size:3.5rem;margin-bottom:.75rem;">&#128054;</div>
+        <h3>Dog Friendly Cafe</h3>
+        <p>
+          Bring your four-legged family member along! Our outdoor area is welcoming to well-behaved dogs.
+          Fresh water bowls are always available, and our team loves a good pup visit.
+          Dogs make everything better — brunch included.
+        </p>
+        <div style="margin-top:1.25rem;">
+          <span class="badge badge-dog" style="font-size:.82rem;padding:.4rem 1rem;">&#128054; Dogs Welcome in Outdoor Area</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES — 4 CARDS -->
+  <section class="section" style="background:var(--bg);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>What We Stand For</h2>
+        <div class="section-divider"></div>
+        <p>Our values show up in every dish, every cup, every welcome at the door</p>
+      </div>
+      <div class="values-grid values-grid--four">
+        <div class="value-card fade-in">
+          <div class="value-icon">&#127869;</div>
+          <h4>Homemade Food</h4>
+          <p>Brunch, baking, and cabinet treats made fresh in our kitchen daily — honest ingredients, real flavour.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">&#9749;</div>
+          <h4>Fair Trade Organic Coffee</h4>
+          <p>We brew with certified fair trade, organic Icoco beans — great taste and fair conditions for growers.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">&#128054;</div>
+          <h4>Friendly &amp; Welcoming</h4>
+          <p>Dog friendly outdoor seating, water bowls for pups, and a team that loves seeing you — two legs or four.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">&#127807;</div>
+          <h4>Community &amp; Choice</h4>
+          <p>Plant-based options clearly marked, plant milks at no extra cost, and a Glen Eden community focus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" style="background:var(--bg-card);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Meet the Team</h2>
+        <div class="section-divider"></div>
+        <p>The people behind the plates and cups — passionate, friendly, and always glad you came in</p>
+      </div>
+      <div class="community-box fade-in">
+        <h3>The Fiesta Kitchen Family</h3>
+        <p>Our team is the heart of everything we do. From the first coffee of the morning to the last plate of the day, we show up with energy and love for what we do.</p>
+        <p>We're a small, close-knit crew — and that shows in the care that goes into every single dish. We're always happy to chat, accommodate dietary needs, and make sure your visit feels special.</p>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">&#128104;&#8205;&#127859;</div>
+            <div class="team-name">Head Chef</div>
+            <div class="team-role">Kitchen &amp; Menu</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">&#9749;</div>
+            <div class="team-name">Head Barista</div>
+            <div class="team-role">Coffee &amp; Drinks</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">&#128578;</div>
+            <div class="team-name">Front of House</div>
+            <div class="team-role">Service &amp; Hospitality</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar">&#127858;</div>
+            <div class="team-name">Kitchen Team</div>
+            <div class="team-role">Daily Prep &amp; Baking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="section" style="background:var(--bg);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Glen Eden Community</h2>
+        <div class="section-divider"></div>
+        <p>Proud to be part of this neighbourhood — here for the long haul</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+        <div class="value-card fade-in">
+          <div class="value-icon">&#127979;</div>
+          <h4>Local School Support</h4>
+          <p>We support Glen Eden schools through fundraising events, donated cabinet items, and catering for community events throughout the year.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">&#127794;</div>
+          <h4>Local Suppliers</h4>
+          <p>We partner with Auckland-based producers for fresh produce, baked goods ingredients, and speciality pantry items wherever possible.</p>
+        </div>
+        <div class="value-card fade-in">
+          <div class="value-icon">&#128104;&#8205;&#128105;&#8205;&#128102;&#8205;&#128103;</div>
+          <h4>Inclusive Space</h4>
+          <p>Fiesta Kitchen is a welcoming space for everyone in our community — all ages, all backgrounds, all dietary needs. You belong here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-in">Come Say Kia Ora</h2>
+      <p class="fade-in">We'd love to have you at the table. Bring your family, bring your dog, bring your appetite.</p>
+      <div class="cta-buttons fade-in">
+        <a href="menu.html" class="btn btn-mustard">View Our Menu</a>
+        <a href="contact.html" class="btn btn-outline-white">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Fiesta Kitchen</div>
+        <div class="footer-brand-sub">Glen Eden, Auckland</div>
+        <p class="footer-desc">A community cafe with Mexican soul. Homemade food, fair trade coffee, and a warm welcome for everyone — four legs included.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/fiesta_kitchen23" target="_blank" rel="noopener" class="social-btn ig-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @fiesta_kitchen23
+          </a>
+          <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="social-btn">&#128172; WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Visit Us</h5>
+        <div class="footer-addr">
+          <p>220 West Coast Road<br>Glen Eden<br>Auckland 0602</p>
+          <p style="margin-top:.75rem"><a href="tel:+6498187693">+64 9 818 7693</a></p>
+          <p><a href="mailto:Info@fiestakitchen.co.nz">Info@fiestakitchen.co.nz</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Fiesta Kitchen | Glen Eden, Auckland</span>
+      <span>220 West Coast Road, Glen Eden, Auckland &nbsp;|&nbsp; <a href="tel:+6498187693">+64 9 818 7693</a></span>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <div class="wa-float">
+    <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="wa-btn" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      <span class="wa-text">Chat with us</span>
+      <div class="wa-pulse"></div>
+    </a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); navLinks.classList.toggle('open'); });
+    document.addEventListener('click', (e) => { if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) { hamburger.classList.remove('open'); navLinks.classList.remove('open'); } });
+    function checkOpen() {
+      const nz = new Date(new Date().toLocaleString('en-US', { timeZone: 'Pacific/Auckland' }));
+      const day = nz.getDay(), mins = nz.getHours() * 60 + nz.getMinutes();
+      const open = (day >= 1 && day <= 5) ? (mins >= 420 && mins < 900) : (mins >= 450 && mins < 870);
+      document.getElementById('statusDot').className = open ? 'status-dot' : 'status-dot closed';
+      document.getElementById('statusText').textContent = open ? 'Open Now' : 'Closed';
+    }
+    checkOpen();
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

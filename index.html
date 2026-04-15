@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fiesta Kitchen — Homemade food, fair trade organic coffee & good vibes in Glen Eden, Auckland. Dog friendly. Vegan options. Takeaway available." />
+  <meta name="keywords" content="Fiesta Kitchen, Glen Eden cafe, Auckland cafe, Mexican cafe, brunch Auckland, dog friendly cafe, vegan brunch" />
+  <title>Fiesta Kitchen | Glen Eden, Auckland</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-name">Fiesta Kitchen</span>
+        <span class="nav-brand-sub">Glen Eden, Auckland</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HOURS BAR -->
+  <div class="hours-bar">
+    <div class="hours-bar-item">
+      <span>&#128336;</span>
+      <span>Mon – Fri: <strong>7:00am – 3:00pm</strong></span>
+    </div>
+    <div class="hours-bar-sep"></div>
+    <div class="hours-bar-item">
+      <span>&#128336;</span>
+      <span>Sat – Sun: <strong>7:30am – 2:30pm</strong></span>
+    </div>
+    <div class="hours-bar-sep"></div>
+    <div class="hours-status" id="openStatus">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking…</span>
+    </div>
+  </div>
+
+  <!-- TAKEAWAY NOTICE -->
+  <div class="takeaway-bar">
+    &#127861; Takeaway available on all items <span>Order at counter</span>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <!-- Coffee bean scatter -->
+    <div class="bean bean-1"></div>
+    <div class="bean bean-2"></div>
+    <div class="bean bean-3"></div>
+    <div class="bean bean-4"></div>
+    <div class="bean bean-5"></div>
+    <div class="bean bean-6"></div>
+    <div class="bean bean-7"></div>
+    <div class="bean bean-8"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left fade-in">
+        <span class="hero-eyebrow">&#127807; Glen Eden, Auckland</span>
+        <h1>Fiesta <span class="highlight">Kitchen</span></h1>
+        <p class="hero-tagline">
+          Homemade food made with love · Fair trade organic coffee · Warm Mexican vibes in the heart of Glen Eden
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">&#128054; Dog Friendly</span>
+          <span class="hero-badge">&#127807; Vegan Options</span>
+          <span class="hero-badge">&#9749; Fair Trade Coffee</span>
+          <span class="hero-badge">&#127868; Takeaway</span>
+        </div>
+        <div class="hero-cta">
+          <a href="menu.html" class="btn btn-mustard">Explore Our Menu</a>
+          <a href="contact.html" class="btn btn-secondary">Find Us</a>
+        </div>
+      </div>
+
+      <!-- RIGHT — floating coffee image -->
+      <div class="hero-right fade-in">
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=90"
+            class="hero-img"
+            alt="Premium fair trade organic coffee at Fiesta Kitchen"
+            loading="eager"
+            onerror="this.style.display='none'"
+          />
+          <div class="hero-img-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED DRINKS ROW -->
+  <div class="drinks-row">
+    <div class="drinks-row-header fade-in">
+      <h2 class="drinks-section-title">Featured Drinks</h2>
+      <p class="drinks-section-sub">Fair trade organic Icoco coffee — crafted with care</p>
+    </div>
+    <div class="drinks-row-inner">
+      <div class="drink-card fade-in">
+        <img class="drink-card-img"
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80"
+          alt="Flat White" loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80'">
+        <div class="drink-card-body">
+          <div class="drink-card-name">Flat White</div>
+          <div class="drink-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="drink-rating"><span class="drink-rating-score">4.9</span> <span class="drink-rating-label">customer rating</span></div>
+          <p class="drink-desc">Rich espresso with velvety steamed milk. Our most popular — and for good reason.</p>
+          <div class="drink-price">$6</div>
+        </div>
+      </div>
+      <div class="drink-card fade-in">
+        <img class="drink-card-img"
+          src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80"
+          alt="Latte" loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80'">
+        <div class="drink-card-body">
+          <div class="drink-card-name">Latte</div>
+          <div class="drink-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="drink-rating"><span class="drink-rating-score">4.9</span> <span class="drink-rating-label">customer rating</span></div>
+          <p class="drink-desc">Smooth, creamy and perfectly balanced. Available with all plant milks at no extra cost.</p>
+          <div class="drink-price">$6.50</div>
+        </div>
+      </div>
+      <div class="drink-card fade-in">
+        <img class="drink-card-img"
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+          alt="Long Black" loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80'">
+        <div class="drink-card-body">
+          <div class="drink-card-name">Long Black</div>
+          <div class="drink-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="drink-rating"><span class="drink-rating-score">4.9</span> <span class="drink-rating-label">customer rating</span></div>
+          <p class="drink-desc">Bold, clean espresso over hot water. Showcases the character of our fair trade organic beans.</p>
+          <div class="drink-price">$5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO STRIP -->
+  <div class="info-strip">
+    <div class="info-strip-grid">
+      <div class="info-card">
+        <div class="info-card-icon">&#128205;</div>
+        <div class="info-card-label">Location</div>
+        <div class="info-card-value">220 West Coast Road<br>Glen Eden, Auckland 0602</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">&#128222;</div>
+        <div class="info-card-label">Phone</div>
+        <div class="info-card-value"><a href="tel:+6498187693">+64 9 818 7693</a></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">&#9993;</div>
+        <div class="info-card-label">Email</div>
+        <div class="info-card-value"><a href="mailto:Info@fiestakitchen.co.nz">Info@fiestakitchen.co.nz</a></div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);border-color:transparent;">
+          <svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div class="info-card-label">Instagram</div>
+        <div class="info-card-value"><a href="https://www.instagram.com/fiesta_kitchen23" target="_blank" rel="noopener">@fiesta_kitchen23</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY FIESTA KITCHEN -->
+  <section class="section" style="background:var(--bg-card);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Why Fiesta Kitchen</h2>
+        <div class="section-divider"></div>
+        <p>More than a cafe — a community kitchen in the heart of Glen Eden</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-number">01</div>
+          <div class="why-content">
+            <h4>&#127869; Homemade Food</h4>
+            <p>From cabinet baking to signature brunch dishes, everything is made fresh in our kitchen daily. No shortcuts, no compromises — ever.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-number">02</div>
+          <div class="why-content">
+            <h4>&#9749; Fair Trade Coffee</h4>
+            <p>Every cup brewed with certified fair trade, organic Icoco beans. Great coffee that supports farmers and tastes extraordinary — because both matter.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-number">03</div>
+          <div class="why-content">
+            <h4>&#128054; Dog Friendly</h4>
+            <p>Bring your furry best friend! Our outdoor area welcomes well-behaved dogs. Fresh water bowls always on hand — because great brunches include the whole family.</p>
+          </div>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-number">04</div>
+          <div class="why-content">
+            <h4>&#127807; Vegan Options</h4>
+            <p>Plenty of plant-based options clearly marked on the menu. We offer oat, almond, soy &amp; coconut milk at no extra cost. Flavour-first, always.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE DISH -->
+  <section class="signature-section">
+    <div class="signature-inner">
+      <div class="signature-text fade-in">
+        <span class="sig-eyebrow">&#11088; Signature Dish</span>
+        <h2>Fiesta Rice</h2>
+        <p>
+          Our most loved dish — and for good reason. Seasoned Mexican-spiced rice served with a perfectly fried egg,
+          slow-cooked black beans, fresh pico de gallo, cool sour cream, and pickled jalapeños.
+          A bowl of warmth and flavour that keeps people coming back.
+        </p>
+        <div class="ingredient-tags">
+          <span class="ingredient-tag">Mexican Rice</span>
+          <span class="ingredient-tag">Fried Egg</span>
+          <span class="ingredient-tag">Black Beans</span>
+          <span class="ingredient-tag">Pico de Gallo</span>
+          <span class="ingredient-tag">Sour Cream</span>
+          <span class="ingredient-tag">Jalapeños</span>
+          <span class="ingredient-tag">Fresh Herbs</span>
+        </div>
+        <a href="menu.html" class="btn btn-mustard">See Full Menu &rarr;</a>
+      </div>
+      <div class="signature-visual fade-in">
+        <div class="dish-plate">
+          <div class="dish-emoji">&#127859;</div>
+          <div class="dish-title">Fiesta Rice</div>
+          <div class="dish-sub">Signature Dish</div>
+          <div class="dish-price">$18</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS -->
+  <section class="section" style="background:var(--bg-card);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Opening Hours</h2>
+        <div class="section-divider"></div>
+        <p>Find us at 220 West Coast Road, Glen Eden — parking available at the back</p>
+      </div>
+      <div class="hours-grid-wrap fade-in">
+        <table class="hours-table">
+          <tbody>
+            <tr><td>Monday – Friday</td><td>7:00am – 3:00pm</td></tr>
+            <tr><td>Saturday</td><td>7:30am – 2:30pm</td></tr>
+            <tr><td>Sunday</td><td>7:30am – 2:30pm</td></tr>
+          </tbody>
+        </table>
+        <div class="hours-note">&#128054; Dog friendly &nbsp;·&nbsp; &#127868; Takeaway available &nbsp;·&nbsp; &#128663; Parking at back</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA — VISIT BANNER -->
+  <section class="cta-section cta-section--visit">
+    <div class="container">
+      <div class="cta-visit-banner fade-in">
+        <h2 class="cta-visit-title">Come Visit Us Today</h2>
+        <p class="cta-visit-text">220 West Coast Road, Glen Eden — homemade food, fair trade coffee, and a warm welcome.</p>
+        <a href="contact.html" class="btn btn-mustard">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Fiesta Kitchen</div>
+        <div class="footer-brand-sub">Glen Eden, Auckland</div>
+        <p class="footer-desc">A community cafe with Mexican soul. Homemade food, fair trade coffee, and a warm welcome for everyone — four legs included.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/fiesta_kitchen23" target="_blank" rel="noopener" class="social-btn ig-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @fiesta_kitchen23
+          </a>
+          <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="social-btn">&#128172; WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Visit Us</h5>
+        <div class="footer-addr">
+          <p>220 West Coast Road<br>Glen Eden<br>Auckland 0602</p>
+          <p style="margin-top:.75rem"><a href="tel:+6498187693">+64 9 818 7693</a></p>
+          <p><a href="mailto:Info@fiestakitchen.co.nz">Info@fiestakitchen.co.nz</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Fiesta Kitchen | Glen Eden, Auckland</span>
+      <span>220 West Coast Road, Glen Eden, Auckland &nbsp;|&nbsp; <a href="tel:+6498187693">+64 9 818 7693</a></span>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <div class="wa-float">
+    <a href="https://wa.me/6498187693" target="_blank" rel="noopener" class="wa-btn" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <span class="wa-text">Chat with us</span>
+      <div class="wa-pulse"></div>
+    </a>
+  </div>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      }
+    });
+
+    // Open/closed status (NZ Auckland time)
+    function checkOpenStatus() {
+      const nz   = new Date(new Date().toLocaleString('en-US', { timeZone: 'Pacific/Auckland' }));
+      const day  = nz.getDay();
+      const mins = nz.getHours() * 60 + nz.getMinutes();
+      const open = (day >= 1 && day <= 5) ? (mins >= 420 && mins < 900) : (mins >= 450 && mins < 870);
+      document.getElementById('statusDot').className = open ? 'status-dot' : 'status-dot closed';
+      document.getElementById('statusText').textContent = open ? 'Open Now' : 'Closed';
+    }
+    checkOpenStatus();
+
+    // Fade-in on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
