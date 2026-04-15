@@ -1441,6 +1441,68 @@ body.drawer-open { overflow: hidden; }
 .getting-here-label { display: block; font-size: .88rem; color: var(--cream); margin-bottom: .2rem; }
 .getting-here-text  { font-size: .84rem; color: var(--tan); line-height: 1.65; margin: 0; }
 
+/* Contact page — mobile 2×2 info cards */
+@media (max-width: 768px) {
+  .contact-info-grid,
+  .contact-cards,
+  .contact-details-grid,
+  .contact-grid > .fade-in:first-child {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    padding: 0 16px !important;
+  }
+  .contact-grid > .fade-in:first-child > .contact-info-title {
+    grid-column: 1 / -1;
+  }
+  .contact-grid > .fade-in:first-child > .contact-hours-box,
+  .contact-grid > .fade-in:first-child > .parking-card {
+    grid-column: 1 / -1;
+  }
+
+  .contact-info-card,
+  .contact-card,
+  .contact-grid > .fade-in:first-child > .contact-item {
+    background: rgba(45, 26, 14, 0.7) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(232, 160, 32, 0.15) !important;
+    border-radius: 16px !important;
+    padding: 20px 12px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .contact-info-card .contact-icon,
+  .contact-card img,
+  .contact-card .icon-box,
+  .contact-grid > .fade-in:first-child > .contact-item > .contact-icon {
+    width: 48px !important;
+    height: 48px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .contact-info-card h3,
+  .contact-card-title,
+  .contact-grid > .fade-in:first-child > .contact-item .contact-label {
+    font-size: 0.7rem !important;
+    letter-spacing: 1px !important;
+    color: #e8a020 !important;
+  }
+
+  .contact-info-card p,
+  .contact-card-text,
+  .contact-grid > .fade-in:first-child > .contact-item .contact-val {
+    font-size: 0.85rem !important;
+    color: #f5e6d3 !important;
+    line-height: 1.4 !important;
+  }
+}
+
 /* ============================================================
    RESPONSIVE — tablet & mobile
    ============================================================ */
