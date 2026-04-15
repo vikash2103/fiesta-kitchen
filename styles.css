@@ -288,12 +288,15 @@ strong { color: var(--cream); }
    ============================================================ */
 .side-drawer {
   position: fixed;
-  top: 0; left: -280px;
-  width: 280px; height: 100vh;
-  background: rgba(26,14,8,.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-right: 1px solid rgba(232,160,32,.2);
+  top: 0;
+  left: calc(-1 * min(75vw, 300px));
+  width: min(75vw, 300px);
+  height: 100vh;
+  background: rgba(20, 10, 4, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(232, 160, 32, 0.25);
+  box-shadow: 4px 0 32px rgba(0,0,0,0.5);
   border-radius: 0 24px 24px 0;
   z-index: 9999;
   transition: left .3s ease;
@@ -306,7 +309,9 @@ strong { color: var(--cream); }
 .drawer-overlay {
   display: none;
   position: fixed; inset: 0;
-  background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   z-index: 9998;
 }
 .drawer-overlay.active { display: block; }
@@ -340,12 +345,24 @@ body.drawer-open { overflow: hidden; }
 .drawer-link.active { background: rgba(232,160,32,.14); color: var(--gold); border-color: rgba(232,160,32,.32); }
 .drawer-link-icon   { font-size: 1.1rem; width: 22px; text-align: center; flex-shrink: 0; }
 
-.drawer-footer { margin-top: 2rem; }
+.drawer-footer { margin-top: auto; flex-shrink: 0; padding-top: 1rem; }
 .drawer-order-btn {
-  display: block; width: 100%; text-align: center;
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-  color: #1a0e08; padding: .82rem 1.5rem;
-  border-radius: 50px; font-weight: 700; font-size: .9rem;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: sticky;
+  bottom: 24px;
+  margin: 24px 20px 0 20px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #e8a020, #c8860a);
+  color: #1a0e08;
+  font-weight: 700;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
   transition: var(--transition);
 }
 .drawer-order-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,160,32,.4); }
