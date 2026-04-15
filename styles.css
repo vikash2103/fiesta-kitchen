@@ -230,7 +230,13 @@ strong { color: var(--cream); }
   margin-left: .6rem;
   letter-spacing: .02em;
 }
-.nav-links .nav-cta:hover { filter: brightness(1.12); transform: scale(1.04); }
+.nav-links .nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(232, 160, 32, 0.7),
+    0 0 60px rgba(232, 160, 32, 0.3),
+    0 8px 25px rgba(0,0,0,0.5);
+}
 .nav-links .nav-cta::after { display: none !important; }
 
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
@@ -367,27 +373,54 @@ body.drawer-open { overflow: hidden; }
 .drawer-link-icon   { font-size: 1.1rem; width: 22px; text-align: center; flex-shrink: 0; }
 
 .drawer-footer { margin-top: 0; flex-shrink: 0; padding-top: 0; }
+
+.nav-order-btn, .nav-cta, .drawer-order-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #e8a020, #c8860a);
+  color: #1a0e08 !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow:
+    0 0 20px rgba(232, 160, 32, 0.5),
+    0 0 40px rgba(232, 160, 32, 0.2),
+    0 4px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+.nav-order-btn::before, .nav-cta::before, .drawer-order-btn::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 40px;
+  background: rgba(255, 200, 80, 0.6);
+  border-radius: 50%;
+  filter: blur(16px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+.nav-order-btn:hover, .nav-cta:hover, .drawer-order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 30px rgba(232, 160, 32, 0.7),
+    0 0 60px rgba(232, 160, 32, 0.3),
+    0 8px 25px rgba(0,0,0,0.5);
+}
 .drawer-order-btn {
   display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  margin: 20px 16px 0 16px !important;
-  padding: 14px 20px !important;
-  background: linear-gradient(135deg, #e8a020, #c8860a) !important;
-  color: #1a0e08 !important;
-  font-weight: 700 !important;
-  border-radius: 50px !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  font-size: 1rem !important;
   width: calc(100% - 32px) !important;
+  margin: 20px 16px 0 16px !important;
   box-sizing: border-box !important;
-  position: relative !important;
-  bottom: auto !important;
-  flex-shrink: 0 !important;
-  transition: var(--transition);
 }
-.drawer-order-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,160,32,.4); }
 
 /* Hide drawer on desktop */
 @media (min-width: 1024px) {
